@@ -12,7 +12,7 @@ for /F "delims=" %%a in (tptechs.txt) do (
 ::Since SFM is shit and setang is always 0.0000000, we can rely on it to be constant. We'll delete 44(?) chars off the end instead of 43(??) because con_logfile adds a newline char.
 ::=========
 set trick=!lastLine:~13,-44!
-echo //This cfg is constantly rewritten by C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\usermod\THATSNOTWHATITSLIKETOEXPERIENCE.bat. by YOU! > "cfg/trick.cfg"
+echo //This cfg is constantly rewritten by C:\Program Files (x86)\Steam\steamapps\common\SourceFilmmaker\game\usermod\tpscript.bat. by YOU! > "cfg/trick.cfg"
 echo bot_teleport bot01 !trick! 0 0 0 >> "cfg/trick.cfg"
 echo bot_teleport bot02 !trick! 0 0 0 >> "cfg/trick.cfg"
 echo bot_teleport bot03 !trick! 0 0 0 >> "cfg/trick.cfg"
@@ -32,7 +32,7 @@ echo bot_teleport bot16 !trick! 0 0 0 >> "cfg/trick.cfg"
 echo bot_teleport bot17 !trick! 0 0 0 >> "cfg/trick.cfg"
 echo bot_teleport bot18 !trick! 0 0 0 >> "cfg/trick.cfg"
 echo bot_teleport bot19 !trick! 0 0 0 >> "cfg/trick.cfg"
-::echo bla > "tptechs.txt" ::This is just so the file doesnt get stupid large. I personally comment it out because I don't care and it keeps a fancy log of whenever ive typed X.
+::echo bla > "tptechs.txt" ::This is just so the file doesnt get stupid large. I personally comment it out because I don't care and it keeps a fancy log of whenever ive typed exec thetrick.
 echo bot_teleport bot01 !trick! 0 0 0
 echo bot_teleport bot02 !trick! 0 0 0
 echo bot_teleport bot03 !trick! 0 0 0
